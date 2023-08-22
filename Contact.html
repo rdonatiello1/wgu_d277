@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<link rel="stylesheet" href="nj.css">
+
+<script> /*Javascript Code that verifies emails match once the submit button is clicked*/
+  function validateEmails() {
+    var email1 = document.getElementById('email1').value;
+    var email2 = document.getElementById('email2').value;
+    
+    var emailError = document.getElementById('emailError');
+    
+    if (email1 === email2) {
+      emailError.textContent = 'Submitted.';
+      emailError.style.color = 'green';
+    } else {
+      emailError.textContent = 'Error: Emails Do Not Match';
+      emailError.style.color = 'red';
+    }
+  }
+</script>
+
+</head>
+<body>
+  
+<!--Header-->
+
+<header>
+  <div class="header">
+  <h2> Contact Us</h2>
+  <p>What's on Your Mind?</p>
+  </div>
+</header>
+
+<!--Nav -->
+
+<nav>
+<div id="nav">
+<ul id="navcontent">
+  <li><a href="nj.html">Go Home</a></li>
+  <li><a href="https://www.state.nj.us/nj/employ/seekers/" target="_blank">Employment</a></li> <!-- a link that opens an external website in a new window or tab using the target attribute-->
+  <li><a href="https://www.nj.com/news/" target="_blank" >Updates</a></li>
+</ul>
+<div class="search">
+  <input type="text" placeholder="Search..">
+</div>
+</div>
+</nav>
+
+<!--Section -->
+
+<section>
+<div class="dep-container">
+<table> <!--HTML-coded table consisting of 3-6 columns and 3-6 rows to organize content-->
+  <caption>State Departments</caption>
+  <tr>
+    <th>Department</th>
+    <th>Website</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Agriculture</td>
+    <td><a href="https://www.nj.gov/agriculture/">Website</a></td>
+    <td><a href="mailto:ContactAg@ag.state.nj.us">Email</a></td>
+  </tr>
+  <tr>
+    <td>Corrections</td>
+    <td><a href="https://www.nj.gov/corrections/pages/index.shtml">Website</a></td>
+    <td><a href="mailto:njcorrections@state.nj.com">Email</a></td>
+  </tr>
+    <tr>
+    <td>Labor & Workforce</td>
+    <td><a href="https://www.nj.gov/labor/">Website</a></td>
+    <td><a href="mailto:njlabor@state.nj.com">Email</a></td>
+  </tr>
+    <tr>
+    <td>Education</td>
+    <td><a href="https://www.nj.gov/education/">Website</a></td>
+    <td><a href="mailto:njeducation@state.nj.com">Email</a></td>
+  </tr>
+</table>
+</div>
+<br>
+<div class="container-bottom">
+  <img class="city-bg" src="nj_scenery.jpg" alt="statelogo">
+  <form class="contactus-container">
+  <p>Send us a Message.</p>
+  <label for="fname">First name</label><br>
+  <input type="text" name="fname" placeholder="John"><br>
+  <label for="lname">Last name</label><br>
+  <input type="text" name="lname" placeholder="Doe"><br>
+  <label for="email1">Email</label> <br>
+  <input type="email" id="email1" placeholder="Enter Your Email" required><br>
+  <label for="email2">Confirm Email</label><br>
+  <input type="email" id="email2" placeholder="Confirm Your Email" required><br>
+  <label for="comment"> Leave Your Message </label><br>
+  <textarea name="comment" rows="4" cols="50"></textarea><br>
+  <button type="button" onclick="validateEmails()">Submit</button>
+  <div id="emailError"></div>
+</form>
+</div>
+</section>
+<hr>
+<!--Aside -->
+
+<aside>
+<div class="aside">
+<h3>Thank you for contacting us!</h3>
+  <p>
+  We will carefully review your message and reply back to you within 2-4 business days.
+  </p>
+</div>
+</aside>
+</body>
+</html>
+

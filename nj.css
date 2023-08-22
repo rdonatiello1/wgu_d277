@@ -1,0 +1,167 @@
+
+body {background-color: white;
+      font-family:roboto; /* One Font-Family declaration */
+      width:85%;
+      margin:0 auto;
+      padding:0 auto;
+}
+
+header{
+  text-align:center;
+}
+
+.header{
+  padding:0;
+  margin:0;
+}
+
+h2{ /*One element selector */
+  font-size:60px;
+  height:15px;
+}
+
+h2 p{
+  font-size:30px;
+}
+
+.njbg{ /* One Class selector */
+  min-width:100%;
+  max-height:15%;
+  height:auto;
+  opacity:25%;
+  border-radius: 8px;
+}
+
+.city-bg{
+  min-width:100%;
+  max-height:15%;
+  height:auto;
+  opacity:25;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  padding-top:0;
+
+}
+
+.column{
+  flex: 1;
+  font-family:Roboto;
+  text-align:center;
+  padding:1%;
+  border-radius:5px;
+}
+
+#nav {margin: 1%; /*One ID selector */
+      background-color:#efefef;
+      padding: 0.5em 0;
+      text-align:center;
+      border:solid;
+}
+
+#navcontent > li {
+  display:inline-block;
+  padding: 0.5em;
+
+}
+
+img {
+    float: left; /*float property to position HTML element to the side of the page*/
+    width:  400px;
+    height: 325px;
+    border-radius:8px;
+    margin-left:5px;
+}
+
+.container-bottom {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.container-text{
+  position: absolute; /*absolute positioning*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-weight:bold;
+  line-height:1.75;
+  background-color:#e8f6fe;
+  border-radius:8px;
+  border:solid;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.container-text-cities {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  line-height:1.75;
+  background-color:#e8f6fe;
+  border-radius:8px;
+  border:solid;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.aside{
+    background-color:#efefef;
+    padding: 0.5em 0;
+}
+
+.form-container{
+  position:relative; /*Relative Positioning*/
+  top:50%;
+}
+
+.contactus-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  line-height:1.75;
+  background-color:#FAF9F6;
+  border:solid 5px black;
+  padding:15px;
+  
+}
+
+table {
+  border-collapse: collapse;
+  width: 99%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.aside{
+  align-items:center;
+  text-align:center;
+}
+
+nav a:hover{ /*Hover pseudo-class selector to create a rollover effect for navigation bars*/
+  font-size: 110%;}
+  
+.njfact{
+  text-align:justify;
+  align-items:center;
+  margin-left:37%;
+  line-height:1.5;
+}
+
+cite{
+  font-size:10px;
+}
